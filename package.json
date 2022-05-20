@@ -1,0 +1,25 @@
+{
+  "name": "bbeleza_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "devrun": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts",
+    "start": "ts-node src/server.ts"
+  },
+  "author": "BrunoSantosPK",
+  "dependencies": {
+    "celebrate": "^15.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "firebase": "^9.8.1",
+    "mongodb": "^4.6.0",
+    "ts-node": "^10.7.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "ts-node-dev": "^1.1.8"
+  }
+}

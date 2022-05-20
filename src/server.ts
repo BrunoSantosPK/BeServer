@@ -12,8 +12,8 @@ import routes from "./routes";
 const app = express();
 config({path: path.join(__dirname, "config", ".env")});
 
-app.use(cors());
 app.use(express.json());
+app.use(cors());
 app.use(routes);
 app.use(errors());
 

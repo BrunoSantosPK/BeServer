@@ -1,14 +1,12 @@
 import { celebrate, Joi, Segments } from "celebrate";
 
-export default class UserValidator {
+const validator = {
+    login: celebrate({
+        [Segments.BODY]: Joi.object().keys({
+            user: Joi.string().required(),
+            pass: Joi.string().required()
+        })
+    })
+};
 
-    static login() {
-        return celebrate({
-            [Segments.BODY]: Joi.object().keys({
-                user: Joi.string().required(),
-                pass: Joi.string().required()
-            })
-        });
-    }
-
-}
+export default validator;

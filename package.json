@@ -9,6 +9,7 @@
   },
   "author": "BrunoSantosPK",
   "dependencies": {
+    "@joi/date": "^2.1.0",
     "celebrate": "^15.0.1",
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
